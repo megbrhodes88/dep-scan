@@ -54,7 +54,7 @@ WORKDIR /appthreat
 RUN python3 setup.py install \
     && rm -rf /appthreat/*
 
-FROM python:3.10-slim
+FROM python:3.14.0a3-slim
 
 LABEL maintainer="AppThreat" \
       org.label-schema.schema-version="1.0" \
